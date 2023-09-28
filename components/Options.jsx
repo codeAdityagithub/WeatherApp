@@ -2,7 +2,7 @@ import React from "react";
 
 import "./options.css";
 
-const Options = ({ locations, setCords, setLocations, setQuery }) => {
+const Options = ({ locations, setCords, setLocations, setQuery, query }) => {
     // console.log(locations)
     const handleClick = (lat, lon) => {
         setCords({ lat, lon });
@@ -25,10 +25,16 @@ const Options = ({ locations, setCords, setLocations, setQuery }) => {
                               )
                           }
                       >
-                          {location.name}
+                          {location.name},{" "}
+                          {location.state}, {" "}
+                          {location.country}
                       </li>
                   ))
-                : null}
+                : (
+                    query.length>2 && (
+                        <li className="locationItem">No such city found</li>
+                    )
+                )}
         </ul>
     );
 };

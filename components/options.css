@@ -4,16 +4,20 @@
     position: absolute;
     top: 100%;
     z-index: 10;
+    border: 1px solid rgba(255, 255, 255, 0.384);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
 }
 
 .locationItem{
-    background: black;
+    background: transparent;
     border-radius: 5px;
     padding: 5px;
-    color: white;
+    color: black;
     cursor: pointer;
     transition: all 0.1s;
 }
 .locationItem:hover{
-    background: gray;
+    background: rgba(255, 255, 255, 0.4);
 }
