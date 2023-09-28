@@ -1,0 +1,24 @@
+.cardContainer{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+.cardInfo{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    color:white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.cardInfo>div{
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; 
+}

@@ -1,0 +1,19 @@
+.locationsList{
+    width: 100%;
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    z-index: 10;
+}
+
+.locationItem{
+    background: black;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+.locationItem:hover{
+    background: gray;
+}

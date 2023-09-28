@@ -11,6 +11,10 @@
     width: 100%;
     height: 100%;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: aqua;
 }
 
@@ -19,7 +23,7 @@
   padding: 1rem;
   max-width: 500px;
   height: 400px;
-  background: #000;
+  background: white;
 }
 .queryInput{
   background: transparent;
@@ -33,4 +37,11 @@
 .queryInput:focus{
   outline: 1px solid red;
   outline-offset: 2px;
+}
+
+.queryForm{
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+
 }
